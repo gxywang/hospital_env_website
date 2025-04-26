@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guiyadai Hospital Staff Directory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5282;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .staff-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .staff-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        .staff-item:last-child {
+            border-bottom: none;
+        }
+        .staff-icon {
+            background-color: #2c5282;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .staff-doctor .staff-icon {
+            background-color: #2c5282;
+        }
+        .staff-nurse .staff-icon {
+            background-color: #38a169;
+        }
+        .staff-info {
+            flex: 1;
+        }
+        .staff-name {
+            font-weight: bold;
+            margin: 0;
+        }
+        .staff-location {
+            color: #666;
+            margin: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guiyadai Hospital Staff Directory</h1>
+        
+        <ul class="staff-list">
+            <li class="staff-item staff-doctor">
+                <div class="staff-icon">D</div>
+                <div class="staff-info">
+                    <p class="staff-name">Dr. Emily Chen</p>
+                    <p class="staff-location">Room 3026</p>
+                </div>
+            </li>
+            <li class="staff-item staff-doctor">
+                <div class="staff-icon">D</div>
+                <div class="staff-info">
+                    <p class="staff-name">Dr. Michael Lee</p>
+                    <p class="staff-location">Room 3002</p>
+                </div>
+            </li>
+            <li class="staff-item staff-doctor">
+                <div class="staff-icon">D</div>
+                <div class="staff-info">
+                    <p class="staff-name">Dr. Sarah Patel</p>
+                    <p class="staff-location">Room 3033</p>
+                </div>
+            </li>
+            <li class="staff-item staff-nurse">
+                <div class="staff-icon">N</div>
+                <div class="staff-info">
+                    <p class="staff-name">Nurse Rachel Owens</p>
+                    <p class="staff-location">Main Desk</p>
+                </div>
+            </li>
+            <li class="staff-item staff-nurse">
+                <div class="staff-icon">N</div>
+                <div class="staff-info">
+                    <p class="staff-name">Nurse Sofia Ahmed</p>
+                    <p class="staff-location">Reception Room</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <p>For appointments, please contact the reception desk.</p>
+        </div>
+    </div>
+</body>
+</html>
